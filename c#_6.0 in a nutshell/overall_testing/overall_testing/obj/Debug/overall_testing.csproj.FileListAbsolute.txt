@@ -1,0 +1,6 @@
+C:\Users\Mateusz\projects\c#_6.0 in a nutshell\overall_testing\overall_testing\bin\Debug\overall_testing.exe.config
+C:\Users\Mateusz\projects\c#_6.0 in a nutshell\overall_testing\overall_testing\bin\Debug\overall_testing.exe
+C:\Users\Mateusz\projects\c#_6.0 in a nutshell\overall_testing\overall_testing\bin\Debug\overall_testing.pdb
+C:\Users\Mateusz\projects\c#_6.0 in a nutshell\overall_testing\overall_testing\obj\Debug\overall_testing.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\projects\c#_6.0 in a nutshell\overall_testing\overall_testing\obj\Debug\overall_testing.exe
+C:\Users\Mateusz\projects\c#_6.0 in a nutshell\overall_testing\overall_testing\obj\Debug\overall_testing.pdb
