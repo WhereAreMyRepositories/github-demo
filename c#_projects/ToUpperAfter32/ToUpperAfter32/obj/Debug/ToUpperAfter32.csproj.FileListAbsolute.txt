@@ -1,0 +1,6 @@
+C:\Users\Mateusz\projects\c#_projects\ToUpperAfter32\ToUpperAfter32\bin\Debug\ToUpperAfter32.exe.config
+C:\Users\Mateusz\projects\c#_projects\ToUpperAfter32\ToUpperAfter32\bin\Debug\ToUpperAfter32.exe
+C:\Users\Mateusz\projects\c#_projects\ToUpperAfter32\ToUpperAfter32\bin\Debug\ToUpperAfter32.pdb
+C:\Users\Mateusz\projects\c#_projects\ToUpperAfter32\ToUpperAfter32\obj\Debug\ToUpperAfter32.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\projects\c#_projects\ToUpperAfter32\ToUpperAfter32\obj\Debug\ToUpperAfter32.exe
+C:\Users\Mateusz\projects\c#_projects\ToUpperAfter32\ToUpperAfter32\obj\Debug\ToUpperAfter32.pdb
