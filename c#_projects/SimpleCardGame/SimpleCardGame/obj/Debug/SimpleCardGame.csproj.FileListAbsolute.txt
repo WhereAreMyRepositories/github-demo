@@ -1,0 +1,14 @@
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\bin\Debug\SimpleCardGame.exe.config
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\bin\Debug\SimpleCardGame.exe
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\bin\Debug\SimpleCardGame.pdb
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\MainWindow.g.cs
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\App.g.cs
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame_MarkupCompile.cache
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame_MarkupCompile.lref
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\MainWindow.baml
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame.g.resources
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame.Properties.Resources.resources
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame.csproj.GenerateResource.Cache
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame.exe
+C:\Users\Mateusz\projects\c#_projects\SimpleCardGame\SimpleCardGame\obj\Debug\SimpleCardGame.pdb

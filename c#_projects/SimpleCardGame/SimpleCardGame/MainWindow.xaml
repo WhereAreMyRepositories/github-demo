@@ -1,0 +1,23 @@
+﻿<Window x:Class="SimpleCardGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCardGame"
+        mc:Ignorable="d"
+        Title="SimpleCardGame" Height="361" Width="453" ResizeMode="CanMinimize" Background="#FF4B4B4B" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="card_0" HorizontalAlignment="Left" Height="160" Margin="35,60,0,0" VerticalAlignment="Top" Width="120" Source="Assets/a1.png" MouseDown="Image_MouseDown" Cursor="Hand"/>
+        <Image x:Name="card_1" HorizontalAlignment="Left" Height="160" Margin="170,59,0,0" VerticalAlignment="Top" Width="120" Source="Assets/trump.png" MouseDown="Image_MouseDown" Cursor="Hand"/>
+        <Image x:Name="card_2" HorizontalAlignment="Left" Height="160" Margin="306,60,0,0" VerticalAlignment="Top" Width="120" Source="Assets/a2.png" MouseDown="Image_MouseDown" Cursor="Hand"/>
+        <Button x:Name="startBtn" Content="Start" HorizontalAlignment="Left" Margin="35,248,0,0" VerticalAlignment="Top" Width="102" Height="36" Background="#FF3CBD00" Foreground="White" FontSize="18" Click="startBtn_Click"/>
+        <TextBlock x:Name="statusTxt" HorizontalAlignment="Left" Margin="157,259,0,0" TextWrapping="Wrap" Text="---" VerticalAlignment="Top" Height="23" Width="202" Foreground="White" TextAlignment="Center" FontSize="16"/>
+        <Label x:Name="qLbl1" Content="?" HorizontalAlignment="Left" Margin="76,-4,0,0" VerticalAlignment="Top" Foreground="#FFFFF300" FontSize="48" Height="63" Width="32"/>
+        <Label x:Name="qLbl2" Content="?" HorizontalAlignment="Left" Margin="213,-4,0,0" VerticalAlignment="Top" Foreground="#FFFFF300" FontSize="48" Height="63" Width="32"/>
+        <Label x:Name="qLbl3" Content="?" HorizontalAlignment="Left" Margin="347,-4,0,0" VerticalAlignment="Top" Foreground="#FFFFF300" FontSize="48" Height="63" Width="32"/>
+        <TextBlock x:Name="scoreTxt" HorizontalAlignment="Left" Margin="10,290,0,0" TextWrapping="Wrap" Text="Score:" VerticalAlignment="Top" Foreground="White" Width="196" FontStyle="Italic" FontSize="16" Height="21"/>
+
+    </Grid>
+</Window>
+
+                
