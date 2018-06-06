@@ -1,0 +1,59 @@
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe.config
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.pdb
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Form1.resources
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Properties.Resources.resources
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.GenerateResource.Cache
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.exe
+C:\Users\Mateusz\Desktop\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.pdb
+E:\sem.6\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe.config
+E:\sem.6\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csprojResolveAssemblyReference.cache
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Form1.resources
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Properties.Resources.resources
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.GenerateResource.Cache
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.CoreCompileInputs.cache
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.exe
+E:\sem.6\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.pdb
+E:\sem.6\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.pdb
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe.config
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.exe
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.pdb
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.pdb
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csprojResolveAssemblyReference.cache
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Form1.resources
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Properties.Resources.resources
+C:\Users\Bartosz\Desktop\wykłady\semestr 6\roboty przem\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.GenerateResource.Cache
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe.config
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.exe
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\PRP_sterownik.pdb
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csprojResolveAssemblyReference.cache
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Form1.resources
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Properties.Resources.resources
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.GenerateResource.Cache
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.CoreCompileInputs.cache
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.exe
+E:\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.pdb
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\Melfa.exe.config
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\Melfa.exe
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\bin\Debug\Melfa.pdb
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Form1.resources
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Properties.Resources.resources
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.GenerateResource.Cache
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\Melfa.exe
+C:\Users\Mateusz\Desktop\SerialManipulatorGUI_StudyProject-master\SerialManipulatorGUI_StudyProject-master\PRP_sterownik\PRP_sterownik\obj\Debug\Melfa.pdb
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Debug\Melfa.exe.config
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\Melfa.exe
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\Melfa.pdb
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csprojResolveAssemblyReference.cache
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Form1.resources
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Properties.Resources.resources
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.csproj.GenerateResource.Cache
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Debug\Melfa.exe
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Debug\Melfa.pdb
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Debug\PRP_sterownik.Data.resources
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Debug\positions.mdf
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Debug\positions_log.ldf
