@@ -16,10 +16,12 @@ namespace PRP_sterownik
     public partial class Form1 : Form
     {
         Data available_pos;
+        ManualResetEvent mrse = new ManualResetEvent(true);
         static readonly object thislock = new object();
         static public SerialPort myCOM;
         Thread RS232data_Thread;
         Thread pos_read;
+        Thread asd;
         static public bool read_state;
         static bool _quit = false;
         public Form1()
@@ -193,13 +195,15 @@ namespace PRP_sterownik
 
                         while (!_quit)
                         {
-                                 Invoke((MethodInvoker)delegate
+                            mrse.WaitOne();
+                            Invoke((MethodInvoker)delegate
                                 {
-                                    if (read_state && myCOM.BytesToRead > 0)
+                                    if (read_state==true && myCOM.BytesToRead > 0)
                                     {
+                                        
                                         try
                                         {
-                                            textBox5.Text += DateTime.Now.ToString("h:mm:ss tt") + "  " + myCOM.ReadTo("\n").ToString();
+                                            textBox5.Text += DateTime.Now.ToString("h:mm:ss tt") + "  " + myCOM.ReadTo("\r").ToString();
                                             textBox5.AppendText(Environment.NewLine);
                                         }
                                         catch (TimeoutException) { }
@@ -271,20 +275,33 @@ namespace PRP_sterownik
         private void button6_Click(object sender, EventArgs e)
         {
             read_state = false;
-
-            myCOM.Write("WH" + "\r");
-            Thread.Sleep(50);
-            if (myCOM.BytesToRead > 0)
+            mrse.Reset();
+            asd = new Thread(delegate ()
+            {
+                try
+                {
+                    myCOM.Write("WH" + "\r");
+                    Thread.Sleep(40);
+                    if (myCOM.BytesToRead > 0)
                     {
-                        try
+                        Invoke((MethodInvoker)delegate
                         {
-                            textBox6.Text = myCOM.ReadTo("\n").ToString();
-                        }
-                        catch (TimeoutException) { }
+                            textBox6.Text = myCOM.ReadTo("\r").ToString();
+                        });
                     }
-            read_state = true;
+                }
+                catch (TimeoutException) { }
 
 
+            });
+            asd.Start();
+
+            new Thread(delegate()
+                {
+                Thread.Sleep(100);
+                  mrse.Set();
+                    read_state = true;
+                }).Start();
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -305,13 +322,12 @@ namespace PRP_sterownik
                           }
                           try
                           {
-
                               myCOM.Write("WH" + "\r");
                               if (myCOM.BytesToRead > 10)
                               {
                                   Invoke((MethodInvoker)delegate
                                   {
-                                      textBox6.Text = myCOM.ReadTo("\n").ToString();
+                                      textBox6.Text = myCOM.ReadTo("\r").ToString();
                                   });
                               }
                           }
@@ -536,7 +552,7 @@ namespace PRP_sterownik
             else if (comboBox7.SelectedIndex == 3)
                 MessageBox.Show("Function:  \n\nTurns each joint the specified angle [in degrees] from the current position. (Joint interpolation) \n\n\nInput Format: \n\nMJ [<waist joint angle>],\n [<shoulder joint angle>],\n[< elbow joint angle >],\n [< pitch joint angle >],\n [< roll joint angle >]", "HELP");
             else if (comboBox7.SelectedIndex == 4)
-                MessageBox.Show("Function:  \n\nMoves the tip of hand to a position whose coordinates (position[mm] and angle[deg]) have been specified. (Joint interpolation) \n\n\nInput Format: \n\nMP [< X coordinate value>], [< Y coordinate value>], [<Z coordinate value >], [<A turning angle>], [<B turning angle>] [,[<R/L>] [,[<A/B>]]]", "HELP");
+                MessageBox.Show("Function:  \n\nMoves the tip of hand to a position whose coordinates (position[mm] and angle[deg]) have been specified. (Joint interpolation) \n\n\nInput Format: \n\nMP [< X coordinate value>], [< Y coordinate value>], [<Z coordinate value >], [<A turning angle>], [<B turning angle>] [,[<R/L>] [,[<A/B>]]]\n\n\n F:  \n\t 00 - 0 0 \n\t 01 - 0,R \n\t 02 - 0,L \n\t 10 - A,0 \n\t 11 - A,L \n\t 12 - A,R \n\t 20 - B,0 \n\t 21 - B,L \n\t 22 - B,R", "HELP");
         }
 
         public void SendCommand(string val)
@@ -560,7 +576,7 @@ namespace PRP_sterownik
             else if (comboBox7.SelectedIndex == 2)
                 SendCommand("DW " + numericUpDown1.Value.ToString().Replace(",", ".") + ",0,0");
             else if (comboBox7.SelectedIndex == 3)
-                SendCommand("MJ " + numericUpDown1.Value.ToString().Replace(",", "."));
+                SendCommand("MJ " + numericUpDown1.Value.ToString().Replace(",", ".") + ",0,0,0,0,0");
         }
 
         private void button9_Click(object sender, EventArgs e)
@@ -572,7 +588,7 @@ namespace PRP_sterownik
             else if (comboBox7.SelectedIndex == 2)
                 SendCommand("DW 0," + numericUpDown2.Value.ToString().Replace(",", ".") + ",0");
             else if (comboBox7.SelectedIndex == 3)
-                SendCommand("MJ 0," + numericUpDown2.Value.ToString().Replace(",", "."));
+                SendCommand("MJ 0," + numericUpDown2.Value.ToString().Replace(",", ".") + ",0,0,0,0");
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -584,7 +600,7 @@ namespace PRP_sterownik
             else if (comboBox7.SelectedIndex == 2)
                 SendCommand("DW 0,0," + numericUpDown3.Value.ToString().Replace(",", "."));
             else if (comboBox7.SelectedIndex == 3)
-                SendCommand("MJ 0,0," + numericUpDown3.Value.ToString().Replace(",", "."));
+                SendCommand("MJ 0,0," + numericUpDown3.Value.ToString().Replace(",", ".")+",0,0,0");
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -592,7 +608,7 @@ namespace PRP_sterownik
             if (comboBox7.SelectedIndex == 0)
                 SendCommand("DJ 4," + numericUpDown4.Value.ToString().Replace(",", "."));
             else if (comboBox7.SelectedIndex == 3)
-                SendCommand("MJ 0,0,0," + numericUpDown4.Value.ToString().Replace(",", "."));
+                SendCommand("MJ 0,0,0," + numericUpDown4.Value.ToString().Replace(",", ".")+",0,0");
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -600,7 +616,7 @@ namespace PRP_sterownik
             if (comboBox7.SelectedIndex == 0)
                 SendCommand("DJ 5," + numericUpDown5.Value.ToString().Replace(",", "."));
             else if (comboBox7.SelectedIndex == 3)
-                SendCommand("MJ 0,0,0,0," + numericUpDown5.Value.ToString().Replace(",", "."));
+                SendCommand("MJ 0,0,0,0," + numericUpDown5.Value.ToString().Replace(",", ".") + ",0");
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -616,10 +632,11 @@ namespace PRP_sterownik
             SendCommand("SP 5");
 
             if (comboBox7.SelectedIndex == 4)
+            {
                 if (numericUpDown6.Value == 0)
-                SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") +"," + numericUpDown2.Value.ToString().Replace(",", ".")+","+ numericUpDown3.Value.ToString().Replace(",", ".")+","+ numericUpDown4.Value.ToString().Replace(",", ".")+"," + numericUpDown5.Value.ToString().Replace(",", "."));
+                    SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") + "," + numericUpDown2.Value.ToString().Replace(",", ".") + "," + numericUpDown3.Value.ToString().Replace(",", ".") + "," + numericUpDown4.Value.ToString().Replace(",", ".") + "," + numericUpDown5.Value.ToString().Replace(",", "."));
                 else if (numericUpDown6.Value == 01)
-                    SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") + "," + numericUpDown2.Value.ToString().Replace(",", ".") + "," + numericUpDown3.Value.ToString().Replace(",", ".") + "," + numericUpDown4.Value.ToString().Replace(",", ".") + "," + numericUpDown5.Value.ToString().Replace(",", ".")+",0,R");
+                    SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") + "," + numericUpDown2.Value.ToString().Replace(",", ".") + "," + numericUpDown3.Value.ToString().Replace(",", ".") + "," + numericUpDown4.Value.ToString().Replace(",", ".") + "," + numericUpDown5.Value.ToString().Replace(",", ".") + ",0,R");
                 else if (numericUpDown6.Value == 02)
                     SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") + "," + numericUpDown2.Value.ToString().Replace(",", ".") + "," + numericUpDown3.Value.ToString().Replace(",", ".") + "," + numericUpDown4.Value.ToString().Replace(",", ".") + "," + numericUpDown5.Value.ToString().Replace(",", ".") + ",0,L");
                 else if (numericUpDown6.Value == 10)
@@ -634,6 +651,7 @@ namespace PRP_sterownik
                     SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") + "," + numericUpDown2.Value.ToString().Replace(",", ".") + "," + numericUpDown3.Value.ToString().Replace(",", ".") + "," + numericUpDown4.Value.ToString().Replace(",", ".") + "," + numericUpDown5.Value.ToString().Replace(",", ".") + ",B,R");
                 else if (numericUpDown6.Value == 22)
                     SendCommand("MP " + numericUpDown1.Value.ToString().Replace(",", ".") + "," + numericUpDown2.Value.ToString().Replace(",", ".") + "," + numericUpDown3.Value.ToString().Replace(",", ".") + "," + numericUpDown4.Value.ToString().Replace(",", ".") + "," + numericUpDown5.Value.ToString().Replace(",", ".") + ",B,L");
+            }
 
             button8.PerformClick();
             button9.PerformClick();
@@ -679,8 +697,18 @@ namespace PRP_sterownik
 
         private void button19_Click(object sender, EventArgs e)
         {
-            Data available_pos = new Data(ref myCOM);
-            available_pos.ShowDialog(); // Shows Form2
+
+            new Thread(delegate ()
+            {
+                try
+                {
+                    available_pos = new Data(ref myCOM, ref mrse);
+                    available_pos.ShowDialog();
+                }catch { Exception ex; }
+                // Shows Form2
+            }).Start();
+            
+
         }
     }
 }

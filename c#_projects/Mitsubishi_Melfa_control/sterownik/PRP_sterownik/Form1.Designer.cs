@@ -79,9 +79,15 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.button19 = new System.Windows.Forms.Button();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button18 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
@@ -100,6 +106,11 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
@@ -119,17 +130,6 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox4 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox5 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox6 = new System.Windows.Forms.MaskedTextBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.button19 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -139,6 +139,7 @@
             this.groupBox1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox10.SuspendLayout();
@@ -153,7 +154,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -315,7 +315,6 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(840, 560);
-            this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -326,7 +325,7 @@
             this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.Size = new System.Drawing.Size(832, 534);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DataFlow";
@@ -408,7 +407,7 @@
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage2.Size = new System.Drawing.Size(832, 534);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Configuration";
@@ -655,9 +654,9 @@
             this.tabPage3.Controls.Add(this.groupBox6);
             this.tabPage3.Controls.Add(this.groupBox5);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Size = new System.Drawing.Size(832, 534);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Control";
@@ -679,6 +678,58 @@
             this.groupBox11.TabIndex = 35;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Save to workspace";
+            // 
+            // button19
+            // 
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button19.Location = new System.Drawing.Point(5, 56);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(320, 25);
+            this.button19.TabIndex = 43;
+            this.button19.Text = "Show already defined points";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericUpDown8.Location = new System.Drawing.Point(183, 25);
+            this.numericUpDown8.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(48, 22);
+            this.numericUpDown8.TabIndex = 42;
+            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.numericUpDown8.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label18.ForeColor = System.Drawing.Color.Maroon;
+            this.label18.Location = new System.Drawing.Point(8, 24);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(167, 18);
+            this.label18.TabIndex = 1;
+            this.label18.Text = "Save current position as";
+            // 
+            // button18
+            // 
+            this.button18.ForeColor = System.Drawing.Color.Maroon;
+            this.button18.Location = new System.Drawing.Point(232, 24);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(96, 24);
+            this.button18.TabIndex = 0;
+            this.button18.Text = "Save";
+            this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // groupBox7
             // 
@@ -736,10 +787,34 @@
             this.groupBox6.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.groupBox6.Location = new System.Drawing.Point(8, 8);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(464, 520);
+            this.groupBox6.Size = new System.Drawing.Size(464, 528);
             this.groupBox6.TabIndex = 32;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Control";
+            // 
+            // button17
+            // 
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button17.ForeColor = System.Drawing.Color.Maroon;
+            this.button17.Location = new System.Drawing.Point(248, 457);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(184, 40);
+            this.button17.TabIndex = 69;
+            this.button17.Text = "Grip Open";
+            this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
+            // 
+            // button16
+            // 
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button16.ForeColor = System.Drawing.Color.Maroon;
+            this.button16.Location = new System.Drawing.Point(40, 457);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(184, 40);
+            this.button16.TabIndex = 68;
+            this.button16.Text = "Grip Close";
+            this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
@@ -872,9 +947,9 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button7.Location = new System.Drawing.Point(40, 408);
+            this.button7.Location = new System.Drawing.Point(40, 406);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(392, 56);
+            this.button7.Size = new System.Drawing.Size(392, 44);
             this.button7.TabIndex = 59;
             this.button7.Text = "Execute";
             this.button7.UseVisualStyleBackColor = true;
@@ -955,6 +1030,61 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Step size";
             // 
+            // maskedTextBox6
+            // 
+            this.maskedTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maskedTextBox6.Location = new System.Drawing.Point(8, 224);
+            this.maskedTextBox6.Mask = "00.00";
+            this.maskedTextBox6.Name = "maskedTextBox6";
+            this.maskedTextBox6.Size = new System.Drawing.Size(104, 24);
+            this.maskedTextBox6.TabIndex = 65;
+            this.maskedTextBox6.Text = "0100";
+            this.maskedTextBox6.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
+            // 
+            // maskedTextBox5
+            // 
+            this.maskedTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maskedTextBox5.Location = new System.Drawing.Point(8, 184);
+            this.maskedTextBox5.Mask = "00.00";
+            this.maskedTextBox5.Name = "maskedTextBox5";
+            this.maskedTextBox5.Size = new System.Drawing.Size(104, 24);
+            this.maskedTextBox5.TabIndex = 64;
+            this.maskedTextBox5.Text = "0100";
+            this.maskedTextBox5.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
+            // 
+            // maskedTextBox4
+            // 
+            this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maskedTextBox4.Location = new System.Drawing.Point(8, 144);
+            this.maskedTextBox4.Mask = "00.00";
+            this.maskedTextBox4.Name = "maskedTextBox4";
+            this.maskedTextBox4.Size = new System.Drawing.Size(104, 24);
+            this.maskedTextBox4.TabIndex = 63;
+            this.maskedTextBox4.Text = "0100";
+            this.maskedTextBox4.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maskedTextBox3.Location = new System.Drawing.Point(8, 104);
+            this.maskedTextBox3.Mask = "00.00";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(104, 24);
+            this.maskedTextBox3.TabIndex = 62;
+            this.maskedTextBox3.Text = "0100";
+            this.maskedTextBox3.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.maskedTextBox2.Location = new System.Drawing.Point(8, 64);
+            this.maskedTextBox2.Mask = "00.00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(104, 24);
+            this.maskedTextBox2.TabIndex = 61;
+            this.maskedTextBox2.Text = "0100";
+            this.maskedTextBox2.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
+            // 
             // maskedTextBox1
             // 
             this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -988,8 +1118,10 @@
             // 
             // numericUpDown6
             // 
+            this.numericUpDown6.Cursor = System.Windows.Forms.Cursors.Default;
             this.numericUpDown6.DecimalPlaces = 2;
             this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.numericUpDown6.ForeColor = System.Drawing.SystemColors.WindowText;
             this.numericUpDown6.Location = new System.Drawing.Point(8, 224);
             this.numericUpDown6.Maximum = new decimal(new int[] {
             360,
@@ -1217,7 +1349,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(224, 24);
+            this.button6.Location = new System.Drawing.Point(256, 24);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 24);
             this.button6.TabIndex = 32;
@@ -1227,152 +1359,22 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(16, 24);
+            this.textBox6.Location = new System.Drawing.Point(62, 19);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(200, 24);
+            this.textBox6.Size = new System.Drawing.Size(183, 38);
             this.textBox6.TabIndex = 32;
             // 
             // eventLog1
             // 
             this.eventLog1.SynchronizingObject = this;
             // 
-            // maskedTextBox2
-            // 
-            this.maskedTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maskedTextBox2.Location = new System.Drawing.Point(8, 64);
-            this.maskedTextBox2.Mask = "00.00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(104, 24);
-            this.maskedTextBox2.TabIndex = 61;
-            this.maskedTextBox2.Text = "0100";
-            this.maskedTextBox2.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
-            // 
-            // maskedTextBox3
-            // 
-            this.maskedTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maskedTextBox3.Location = new System.Drawing.Point(8, 104);
-            this.maskedTextBox3.Mask = "00.00";
-            this.maskedTextBox3.Name = "maskedTextBox3";
-            this.maskedTextBox3.Size = new System.Drawing.Size(104, 24);
-            this.maskedTextBox3.TabIndex = 62;
-            this.maskedTextBox3.Text = "0100";
-            this.maskedTextBox3.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
-            // 
-            // maskedTextBox4
-            // 
-            this.maskedTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maskedTextBox4.Location = new System.Drawing.Point(8, 144);
-            this.maskedTextBox4.Mask = "00.00";
-            this.maskedTextBox4.Name = "maskedTextBox4";
-            this.maskedTextBox4.Size = new System.Drawing.Size(104, 24);
-            this.maskedTextBox4.TabIndex = 63;
-            this.maskedTextBox4.Text = "0100";
-            this.maskedTextBox4.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
-            // 
-            // maskedTextBox5
-            // 
-            this.maskedTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maskedTextBox5.Location = new System.Drawing.Point(8, 184);
-            this.maskedTextBox5.Mask = "00.00";
-            this.maskedTextBox5.Name = "maskedTextBox5";
-            this.maskedTextBox5.Size = new System.Drawing.Size(104, 24);
-            this.maskedTextBox5.TabIndex = 64;
-            this.maskedTextBox5.Text = "0100";
-            this.maskedTextBox5.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
-            // 
-            // maskedTextBox6
-            // 
-            this.maskedTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.maskedTextBox6.Location = new System.Drawing.Point(8, 224);
-            this.maskedTextBox6.Mask = "00.00";
-            this.maskedTextBox6.Name = "maskedTextBox6";
-            this.maskedTextBox6.Size = new System.Drawing.Size(104, 24);
-            this.maskedTextBox6.TabIndex = 65;
-            this.maskedTextBox6.Text = "0100";
-            this.maskedTextBox6.TextChanged += new System.EventHandler(this.maskedTextBox6_TextChanged);
-            // 
-            // button16
-            // 
-            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button16.ForeColor = System.Drawing.Color.Maroon;
-            this.button16.Location = new System.Drawing.Point(40, 472);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(184, 40);
-            this.button16.TabIndex = 68;
-            this.button16.Text = "Grip Close";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button17
-            // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button17.ForeColor = System.Drawing.Color.Maroon;
-            this.button17.Location = new System.Drawing.Point(248, 472);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(184, 40);
-            this.button17.TabIndex = 69;
-            this.button17.Text = "Grip Open";
-            this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button18
-            // 
-            this.button18.ForeColor = System.Drawing.Color.Maroon;
-            this.button18.Location = new System.Drawing.Point(232, 24);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(96, 24);
-            this.button18.TabIndex = 0;
-            this.button18.Text = "Save";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label18.ForeColor = System.Drawing.Color.Maroon;
-            this.label18.Location = new System.Drawing.Point(8, 24);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(167, 18);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "Save current position as";
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.numericUpDown8.Location = new System.Drawing.Point(176, 24);
-            this.numericUpDown8.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(48, 22);
-            this.numericUpDown8.TabIndex = 42;
-            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown8.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            // 
-            // button19
-            // 
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button19.Location = new System.Drawing.Point(8, 56);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(320, 25);
-            this.button19.TabIndex = 43;
-            this.button19.Text = "Show already defined points";
-            this.button19.UseVisualStyleBackColor = true;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(834, 577);
             this.Controls.Add(this.statusStrip1);
@@ -1395,6 +1397,7 @@
             this.tabPage3.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
@@ -1413,7 +1416,6 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

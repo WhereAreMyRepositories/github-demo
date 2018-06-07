@@ -15,13 +15,14 @@ namespace PRP_sterownik
     public partial class Data : Form
     {
         SerialPort myC;
-      
-        public Data(ref SerialPort myCOM)
+        ManualResetEvent mrse;
+  
+        public Data(ref SerialPort myCOM,ref ManualResetEvent mrse)
         {
             
             InitializeComponent();
             myC = myCOM;
-          
+            this.mrse = mrse;
         }
 
         private void tableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -41,32 +42,68 @@ namespace PRP_sterownik
 
         private void button1_Click(object sender, EventArgs ex)
         {
-            
+            string data = "";
+            dataSet1.Tables["Table"].Clear();
+            mrse.Reset();
 
-            for (int i = Convert.ToInt16(textBox4.Text); i <= Convert.ToInt16(textBox5.Text); i++)
-            {
-                try
+           
+                for (int i = Convert.ToInt16(textBox4.Text); i <= Convert.ToInt16(textBox5.Text); i++)
                 {
-                    DataRow nextpos = dataSet1.Tables["Table"].NewRow();
-                    myC.Write("PR " + i);                    
 
-                    nextpos["Id"] = i;
-                    Thread.Sleep(10);
-                    while(myC.BytesToRead > 10)
+                    try
                     {
-                        try
+                    
+                        
+                        myC.Write("PR " + i);
+
+                        
+                        Thread.Sleep(10);
+                        while (myC.BytesToRead > 0)
                         {
-                            nextpos["data"] = myC.ReadTo("\n").ToString();
+                            try
+                            {
+                                data = myC.ReadTo("\r").ToString();
+                            }
+                            catch (TimeoutException) { }
                         }
-                        catch (TimeoutException) { }
+                        
+
+                    if (!checkBox1.Checked)
+                    {
+                        if (!data.StartsWith("0,0,0,0,0,0"))
+                        {
+                            DataRow nextpos = dataSet1.Tables["Table"].NewRow();
+                            nextpos["Id"] = i;
+                            nextpos["data"] = data;
+                            dataSet1.Tables["Table"].Rows.Add(nextpos);
+                        }
+                    }
+                    else
+                    {
+                        if (data.StartsWith("0,0,0,0,0,0"))
+                        {
+                            data = "undefined";
+                            DataRow nextpos = dataSet1.Tables["Table"].NewRow();
+                            nextpos["Id"] = i;
+                            nextpos["data"] = data;
+                            dataSet1.Tables["Table"].Rows.Add(nextpos);
+                        }
+                        else
+                        {
+                            DataRow nextpos = dataSet1.Tables["Table"].NewRow();
+                            nextpos["Id"] = i;
+                            nextpos["data"] = data;
+                            dataSet1.Tables["Table"].Rows.Add(nextpos);
+                        }
                     }
 
-
-                    dataSet1.Tables["Table"].Rows.Add(nextpos);
+                        
+                    }
+                    catch (Exception e) { MessageBox.Show(e.ToString()); break; }
                 }
-                catch ( Exception e) { MessageBox.Show(e.ToString()); break;  }
-            }
-       
+            mrse.Set();
+
+
         }
 
         private void tableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -1,0 +1,11 @@
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Release\Melfa.exe.config
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Release\positions.mdf
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Release\positions_log.ldf
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Release\Melfa.exe
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\bin\Release\Melfa.pdb
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Release\PRP_sterownik.Data.resources
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Release\PRP_sterownik.Form1.resources
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Release\PRP_sterownik.Properties.Resources.resources
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Release\PRP_sterownik.csproj.GenerateResource.Cache
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Release\Melfa.exe
+C:\Users\Mateusz\projects\c#_projects\Mitsubishi_Melfa_control\sterownik\PRP_sterownik\obj\Release\Melfa.pdb
