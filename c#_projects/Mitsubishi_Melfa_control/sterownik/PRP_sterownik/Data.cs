@@ -54,7 +54,7 @@ namespace PRP_sterownik
                     {
                     
                         
-                        myC.Write("PR " + i);
+                        myC.Write("PR " + i+ "\r");
 
                         
                         Thread.Sleep(10);
@@ -64,13 +64,13 @@ namespace PRP_sterownik
                             {
                                 data = myC.ReadTo("\r").ToString();
                             }
-                            catch (TimeoutException) { }
+                            catch (Exception) { }
                         }
                         
 
                     if (!checkBox1.Checked)
                     {
-                        if (!data.StartsWith("0,0,0,0,0,0"))
+                        if (!data.StartsWith("0.00,0.00,0.00"))
                         {
                             DataRow nextpos = dataSet1.Tables["Table"].NewRow();
                             nextpos["Id"] = i;
@@ -80,7 +80,7 @@ namespace PRP_sterownik
                     }
                     else
                     {
-                        if (data.StartsWith("0,0,0,0,0,0"))
+                        if (data.StartsWith("0.00,0.00,0.00"))
                         {
                             data = "undefined";
                             DataRow nextpos = dataSet1.Tables["Table"].NewRow();

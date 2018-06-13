@@ -290,7 +290,7 @@ namespace PRP_sterownik
                         });
                     }
                 }
-                catch (TimeoutException) { }
+                catch (Exception) { }
 
 
             });
@@ -313,15 +313,16 @@ namespace PRP_sterownik
                   {
                       while (true)
                       {
-                          if (textBox7.Text != "")
+                          try
+                          {
+                              if (textBox7.Text != "")
                               Thread.Sleep(Math.Abs(Convert.ToInt32(textBox7.Text)));
                           else
                           {
                               MessageBox.Show("undefined value", "Error");
                               break;
                           }
-                          try
-                          {
+                          
                               myCOM.Write("WH" + "\r");
                               if (myCOM.BytesToRead > 10)
                               {
@@ -331,7 +332,7 @@ namespace PRP_sterownik
                                   });
                               }
                           }
-                          catch (TimeoutException) { }
+                          catch (Exception) { }
                       }
                   });
                 pos_read.Start();
